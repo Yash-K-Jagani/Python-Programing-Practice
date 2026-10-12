@@ -1,14 +1,8 @@
-# Line 1 of the input is a whole number, line 2 is a decimal number.
-whole_text = input()
-decimal_text = input()
+code = input()
+amount = int(input())
 
-# TODO: turn the two lines of text into numbers and add them up
-whole_int = int(whole_text)
-decimal_float = float(decimal_text)
-
-total_1 = whole_int + decimal_float
-total_2 = int(total_1)
-
-print(total_1)
-print(total_2)
-print(f"{whole_int} + {decimal_float} = {total_1}")
+# Replace each placeholder below with the comparison described in the comment.
+print("GOLD" == code)  # TODO: is the code exactly GOLD?
+print("X" in code)  # TODO: does the code contain an X?
+print(amount > 49 and amount < 201)  # TODO: is the amount between 50 and 200, both ends included?
+print("GOLD" == code or amount > 200 or amount < 50)  # TODO: exactly GOLD, or the amount outside that band?
