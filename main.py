@@ -1,7 +1,11 @@
-num = int(input())
+total_sum = 0
 
-# TODO: print the ten lines of the table for n, one line per product.
-# Loop over the numbers 1 through 10 and build each line with an f-string.
-# Nothing is printed yet, so every test fails until you add the loop.
-for i in range(1, 11):
-  print(f"{num} x {i} = {num * i}")
+while True:
+  user_input = int(input())
+
+  if user_input == 0:
+    break
+
+  total_sum += user_input
+
+print(total_sum)
