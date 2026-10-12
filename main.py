@@ -1,11 +1,6 @@
-total_sum = 0
+n = int(input())
 
-while True:
-  user_input = int(input())
-
-  if user_input == 0:
-    break
-
-  total_sum += user_input
-
-print(total_sum)
+for row in range(1, n + 1):
+  for col in range(1, n + 1):
+    print((row * col) % 10, end="")
+  print()
