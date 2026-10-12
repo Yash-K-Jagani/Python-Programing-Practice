@@ -1,6 +1,11 @@
-n = int(input())
+text = input()
 
-for row in range(1, n + 1):
-  for col in range(1, n + 1):
-    print((row * col) % 10, end="")
-  print()
+# TODO: build a new string whose first and last characters are swapped,
+# with every character between them left where it is.
+# Remember that a very short string has nothing to swap.
+if len(text) > 1:
+  result = text[-1] + text[1:-1] + text[0] 
+else:
+  result = text
+
+print(result)
